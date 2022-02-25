@@ -11,3 +11,29 @@
  * 
  */
 
+    console.log("Boas vindas ao jogo de Blackjack!")
+   
+if (confirm("Quer iniciar uma nova rodada?")) {
+
+   const primeiraCarta = comprarCarta();
+   const segundaCarta = comprarCarta();
+   const somaDosValores = primeiraCarta.valor + segundaCarta.valor
+
+   const primeiraCartaComp = comprarCarta();
+   const segundaCartaComp = comprarCarta();
+   const somaDosValoresComp = primeiraCartaComp.valor + segundaCartaComp.valor
+
+   console.log(`Usuário - ${primeiraCarta.texto},${segundaCarta.texto} - pontuação ${somaDosValores}`)
+   console.log(`Usuário - ${primeiraCartaComp.texto},${segundaCartaComp.texto} - pontuação ${somaDosValoresComp}`)
+   
+   if (somaDosValores > somaDosValoresComp) {
+      console.log("Você Ganhou!")
+   } else if (somaDosValores < somaDosValoresComp) {
+      console.log("Você Perdeu!")
+   } 
+   else if (somaDosValores === somaDosValoresComp) {
+      console.log("Empatou")}
+
+} else {
+   console.log("O Jogo Acabou")
+}
