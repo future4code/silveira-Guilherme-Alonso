@@ -1,0 +1,19 @@
+.container img {
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
+#destaque {
+    background-color: rgb(103, 47, 192);
+    border: 1px dotted black;
+    display: inline;
+    color: rgb(243, 241, 122);
+    text-align: center;
+}
+
+.menu{
+    text-align: center;
+    padding-bottom: 150px;
+}
